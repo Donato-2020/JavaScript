@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaração de Nacionalidade</title>
+</head>
+<body>
+    <h1>Declare sua Nacionalidade</h1>
+    <p>Declare: <input type="text" name="nacionalidade" id="nacionalidade"></p>
+    
+    <input type="button" value="Declarar" onclick="confirmar()">
+
+    <div id="res">
+    </div>
+
+    <script>
+        function confirmar() {
+            var naci = document.getElementById('nacionalidade')
+            var res = document.getElementById('res')
+            var nac = nacionalidade.value // Importante usar isso para captar o valor digitado
+            res.innerHTML = 'Sua Nacionalidade'
+
+            if (nac == "Brasil" || nac == "brasil") {  
+                res.innerHTML = 'Você é um feio'
+            }
+        }
+    </script>
+</body>
+</html>
